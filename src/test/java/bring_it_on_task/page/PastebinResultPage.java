@@ -32,7 +32,7 @@ public class PastebinResultPage {
     }
 
     public String getPasteSyntaxHighlight(){
-        return new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(syntaxHighlight)).getText();
+        return new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(syntaxHighlight)).getText();
     }
 
     public String getPostTitle(){

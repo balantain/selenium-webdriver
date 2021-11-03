@@ -20,6 +20,7 @@ public class GoogleCloudEmailEstimatePage extends AbstractPage{
     private WebElement sendEmailBtn;
 
     public void sendEmail(String emailAddress){
+        driver.switchTo().defaultContent();
         driver.switchTo()
                 .frame(new WebDriverWait(driver, WAITING_TIME)
                         .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"cloud-site\"]/devsite-iframe/iframe"))));

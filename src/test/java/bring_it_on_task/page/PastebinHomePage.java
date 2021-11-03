@@ -46,9 +46,6 @@ public class PastebinHomePage {
 
     public PastebinHomePage openPage(){
         driver.get(PASTEBIN_URL);
-    //in case VPN
-//        new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(cookiesAgreement));
-//        cookiesAgreement.click();
         return this;
     }
 

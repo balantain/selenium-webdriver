@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.util.Set;
+
 public class WebDriverPastebinTest {
     private WebDriver driver;
     private final static String PASTE_TEXT =
